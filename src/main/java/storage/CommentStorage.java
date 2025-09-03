@@ -38,7 +38,6 @@ public class CommentStorage {
             statement.close();
         } catch (SQLException e) {
             SQLExceptionHandling.handling(e.getSQLState());
-            System.out.println(e.getMessage());
         }
 
         return comments;
@@ -67,7 +66,6 @@ public class CommentStorage {
             statement.close();
         } catch (SQLException e) {
             SQLExceptionHandling.handling(e.getSQLState());
-            System.out.println(e.getMessage());
         }
 
         return comment;

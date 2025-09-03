@@ -168,7 +168,6 @@ public class TaskStorage {
             statement.close();
         } catch (SQLException e) {
             SQLExceptionHandling.handling(e.getSQLState());
-            System.out.println(e.getMessage());
         }
 
         return task_id;
@@ -248,7 +247,6 @@ public class TaskStorage {
             statement.close();
         } catch (SQLException e) {
             SQLExceptionHandling.handling(e.getSQLState());
-            System.out.println(e.getMessage());
         }
 
         return count;

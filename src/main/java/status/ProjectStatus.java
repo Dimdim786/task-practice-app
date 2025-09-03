@@ -1,5 +1,5 @@
 package status;
 
 public enum ProjectStatus {
-    planning, in_progress, on_hold, review, completed;
+    PLANNING, IN_PROGRESS, ON_HOLD, REVIEW, COMPLETED;
 }

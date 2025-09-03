@@ -234,20 +234,20 @@ public class Main {
 
     private static void getProjectsByStatus() {
         System.out.println("Выберите статус проекта:");
-        System.out.println("1. planning");
-        System.out.println("2. in_progress");
-        System.out.println("3. on_hold");
-        System.out.println("4. review");
-        System.out.println("5. completed");
+        System.out.println("1. PLANNING");
+        System.out.println("2. IN_PROGRESS");
+        System.out.println("3. ON_HOLD");
+        System.out.println("4. REVIEW");
+        System.out.println("5. COMPLETED");
         System.out.print("Ваш выбор: ");
 
         String choice = scanner.nextLine().trim();
         ProjectStatus status = switch (choice) {
-            case "1" -> ProjectStatus.planning;
-            case "2" -> ProjectStatus.in_progress;
-            case "3" -> ProjectStatus.on_hold;
-            case "4" -> ProjectStatus.review;
-            case "5" -> ProjectStatus.completed;
+            case "1" -> ProjectStatus.PLANNING;
+            case "2" -> ProjectStatus.IN_PROGRESS;
+            case "3" -> ProjectStatus.ON_HOLD;
+            case "4" -> ProjectStatus.REVIEW;
+            case "5" -> ProjectStatus.COMPLETED;
             default -> {
                 System.out.println("Неверный выбор статуса");
                 yield null;
@@ -280,20 +280,20 @@ public class Main {
         String name = scanner.nextLine().trim();
 
         System.out.println("Выберите новый статус:");
-        System.out.println("1. planning");
-        System.out.println("2. in_progress");
-        System.out.println("3. on_hold");
-        System.out.println("4. review");
-        System.out.println("5. completed");
+        System.out.println("1. PLANNING");
+        System.out.println("2. IN_PROGRESS");
+        System.out.println("3. ON_HOLD");
+        System.out.println("4. REVIEW");
+        System.out.println("5. COMPLETED");
         System.out.print("Ваш выбор: ");
 
         String choice = scanner.nextLine().trim();
         ProjectStatus status = switch (choice) {
-            case "1" -> ProjectStatus.planning;
-            case "2" -> ProjectStatus.in_progress;
-            case "3" -> ProjectStatus.on_hold;
-            case "4" -> ProjectStatus.review;
-            case "5" -> ProjectStatus.completed;
+            case "1" -> ProjectStatus.PLANNING;
+            case "2" -> ProjectStatus.IN_PROGRESS;
+            case "3" -> ProjectStatus.ON_HOLD;
+            case "4" -> ProjectStatus.REVIEW;
+            case "5" -> ProjectStatus.COMPLETED;
             default -> {
                 System.out.println("Неверный выбор статуса");
                 yield null;
@@ -357,16 +357,16 @@ public class Main {
 
     private static void getTasksByStatus() {
         System.out.println("Выберите статус задачи:");
-        System.out.println("1. undone");
-        System.out.println("2. in_progress");
-        System.out.println("3. done");
+        System.out.println("1. UNDONE");
+        System.out.println("2. IN_PROGRESS");
+        System.out.println("3. DONE");
         System.out.print("Ваш выбор: ");
 
         String choice = scanner.nextLine().trim();
         TaskStatus status = switch (choice) {
-            case "1" -> TaskStatus.undone;
-            case "2" -> TaskStatus.in_progress;
-            case "3" -> TaskStatus.done;
+            case "1" -> TaskStatus.UNDONE;
+            case "2" -> TaskStatus.IN_PROGRESS;
+            case "3" -> TaskStatus.DONE;
             default -> {
                 System.out.println("Неверный выбор статуса");
                 yield null;
@@ -424,16 +424,16 @@ public class Main {
         String id = scanner.nextLine().trim();
 
         System.out.println("Выберите новый статус:");
-        System.out.println("1. undone");
-        System.out.println("2. in_progress");
-        System.out.println("3. done");
+        System.out.println("1. UNDONE");
+        System.out.println("2. IN_PROGRESS");
+        System.out.println("3. DONE");
         System.out.print("Ваш выбор: ");
 
         String choice = scanner.nextLine().trim();
         TaskStatus status = switch (choice) {
-            case "1" -> TaskStatus.undone;
-            case "2" -> TaskStatus.in_progress;
-            case "3" -> TaskStatus.done;
+            case "1" -> TaskStatus.UNDONE;
+            case "2" -> TaskStatus.IN_PROGRESS;
+            case "3" -> TaskStatus.DONE;
             default -> {
                 System.out.println("Неверный выбор статуса");
                 yield null;
